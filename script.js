@@ -1,4 +1,3 @@
-
 //click events
 document.getElementById("enroll").addEventListener("click", function(event){
   event.preventDefault();
@@ -89,6 +88,5 @@ function displayData(data){
 function clear(){
     document.getElementById("form").reset();
 }
-
 
 
