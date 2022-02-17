@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <title>STUDENT ENROLLMENT FORM </title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+
+<body>
+
+    <div class="heading">
+        <h2>Studnet Enrollment Form</h2>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form  id="form" >
+                <div class="feild">
+                    <div class="label">
+                        <label>Name</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="text" name="name" id="name" />
+                    </div>
+                </div>
+                <div class="feild">
+                    <div class="label">
+                        <label>Email</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="email" name="email" id="email" />
+                    </div>
+                </div>
+                <div class="feild">
+                    <div class="label">
+                        <label>Website</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="text" name="website" id="website" />
+                    </div>
+                </div>
+                <div class="feild">
+                    <div class="label">
+                        <label>Imagelink</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="text" name=iImagelink" id="imagelink" />
+                    </div>
+                </div>
+                <div class="feild">
+                    <div class="label">
+                        <label>Gender</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="radio" name="gender"  value="male" /> <span>Male</span>
+                        <input type="radio" name="gender"  value="female" /> <span>female</span>
+                    </div>
+                </div>
+                <div class="feild">
+                    <div class="label">
+                        <label>Skills</label>
+                    </div>
+                    <div class="inputField">
+                        <input type="checkbox" name="java" class="skill" id="java" value="java"/> <span>Java</span>
+                        <input type="checkbox" name="HTML" class="skill" id="HTML" value="HTML"/> <span>HTML</span>
+                        <input type="checkbox" name="css" class="skill" id="css" value="css"/> <span>CSS</span>
+                    </div>
+                </div>
+                <div class="button">
+                    <button id="enroll" >Enroll Student</button>
+                    <button id="clear">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="data">
+            <div class="enrollheading">
+                <h2>Enrolled Students</h2>
+            </div>
+            <div class="showdata">
+                <table id="table" >
+                    <tr>
+                        <th>Description</th>
+                        <th>Image</th>
+                    </tr>
+                </table>   
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+ 
+</body>
+
+
+</html>
