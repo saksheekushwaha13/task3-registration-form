@@ -1,0 +1,149 @@
+body{
+    margin:0;
+    padding:0;
+}
+.heading{
+    background-color: #46d7ac;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    display: flex; 
+    margin-top: 50px;
+}
+.form{
+    width: 100%;
+    flex:0.4;
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+}
+
+.feild,.button{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.feild{
+    justify-content: space-between;
+}
+
+
+.feild .inputField input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.button button{ 
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.button #enroll{
+    background-color: #0275d8;
+}
+
+.button #enroll:hover{
+    background-color: #fff;
+    color:#0275d8;
+    border: 1px solid #0275d8;
+}
+
+.button #clear{
+    background-color: #d9534f;
+    margin-left: 10px;
+}
+
+.button #clear:hover{
+    background-color: #fff;
+    color:#d9534f;
+    border: 1px solid #d9534f;
+}
+
+.line{
+    flex:0.1;
+    border-left: 3px solid #46d7ac;
+    height: 500px;
+}
+.data{
+    flex:0.5;
+    display: flex;
+    flex-direction: column;
+    
+}
+.data .enrollheading{
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.showdata{
+    padding: 40px;
+}
+.showdata #table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  cursor: pointer;
+
+}
+
+#table tr:nth-child(odd){background-color: #ebf2d3;}
+
+#table tr:hover {background-color: #ddd;}
+
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #a7c93f;
+  color: white;
+}
+#table tr #image{
+    text-align: center;
+}
+#table tr td img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+  .line{
+      width: 90%;
+      height: 2px;
+      border-left: 0px;
+      border-bottom: 3px solid #46d7ac;
+  }
+
+  .data{ 
+      width: 90%;
+  }
+
+}
